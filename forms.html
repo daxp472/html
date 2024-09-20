@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> FORMS </h1>
+    <form action="/action_page.php" target="_self" autocomplete="on">
+        <label for="fname">First Name:</label> <br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name</label> <br>
+        <input type="text" id="lname" name="lname"> <br>
+
+        <div><p>Choose favourite sports </p></div>
+        <input type="radio" id="cricket" name="fav sports" value="cricket">
+        <label for="cricket">cricket</label><br>
+        <input type="radio" id="chess" name="fav sports" value="chess">
+        <label for="chess">chess</label><br>
+        <input type="radio" id="Football" name="fav sports" value="Football">
+        <label for="Football">Football</label><br>
+
+        <div><p>Choose favourite Movie </p></div>
+        <input type="checkbox" id="movie1" name="movie1" value="stree - 2">
+        <label for="movie1"> I like stree - 2</label><br>
+        <input type="checkbox" id="movie2" name="movie2" value="kalki">
+        <label for="movie2"> I like kalki</label><br>
+        <input type="checkbox" id="movie3" name="movie3" value="bahubali">
+        <label for="movie3"> I like bahubali</label><br>
+
+
+
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset" >
+    </form>
+
+
+
+
+<h1> HTML Form Attributes </h1>
+
+    <form action="/action_page.php" target="_self">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="NAME"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="LAST NAME"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset" >
+    </form>
+
+    <form action="/action_page.php" target="_blank">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="NAME"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="LAST NAME"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset" >
+    </form>
+
+    <form action="/action_page.php" target="_parent">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="NAME"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="LAST NAME"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset" >
+    </form>
+
+    <form action="/action_page.php" target="_top">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="NAME"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="LAST NAME"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset" >
+    </form>
+
+    
+<h1> HTML Form Elements </h1>
+
+    <form>
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+        <option value="Alto">Alto</option>
+        <option value="Punch">Punch</option>
+        <option value="G wagon">G wagon</option>
+        <option value="audi">Audi</option>
+</select>
+<input type="submit" value="submit" >
+    </form>
+
+
+
+
+<form>
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars" size="4" multiple>
+    <option value="Alto">Alto</option>
+    <option value="Punch">Punch</option>
+    <option value="G wagon">G wagon</option>
+    <option value="audi">Audi</option>>
+    </select>
+<input type="submit" value="submit">
+</form>
+<br>
+<br>
+
+
+<button type="button" onclick="alert('Are you sure!')">Click Me!</button>
+
+<br>
+<br>
+
+
+<h2>  </h2>
+
+<form action="/action_page.php">
+    <fieldset>
+      <legend>Personalia:</legend>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="DAX"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="PATEL"><br><br>
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+
+
+<br>
+<p> choose your browsers which you using currently</p>
+<br>
+
+  <form action="/action_page.php">
+    <input list="browsers">
+    <datalist id="browsers">
+      <option value="Edge">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+  </form>
+
+
+<br>
+<br>
+
+
+
+<form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+
+
+
+
+
+    <!-- <footer>
+
+    <p><b>contact us -- 7202035033</b></p>
+    <p> for any doubt call us no need to worry we are hear to help you</p>
+    
+    <p> thanks </p>
+
+
+    </footer> -->
+</body>
+</html>
