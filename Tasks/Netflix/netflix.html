@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone By DAX PATEL</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            background-color: black;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .catagori{
+          font-size: small;
+          
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            cursor: pointer;
+        }
+
+        .search-profile {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .search-profile input[type="text"] {
+            background-color: #333;
+            border: none;
+            color: white;
+            padding: 7px;
+            border-radius: 4px;
+        }
+
+        .search-profile img {
+            height: 35px;
+            cursor: pointer;
+        }
+
+        .hero {
+            position: relative;
+            height: 90vh;
+            background-image: url('back.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-text {
+            position: absolute;
+            bottom: 100px;
+            left: 50px;
+        }
+
+        .hero-text h1 {
+            font-size: 70px;
+            margin: 0;
+        }
+
+        .hero-text p {
+            font-size: 25px;
+        }
+
+        .hero-buttons button {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .carousel {
+            padding: 30px 50px;
+        }
+
+        .carousel h2 {
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .carousel-items {
+            display: flex;
+            gap: 15px;
+        }
+
+        .carousel-items img {
+            width: 200px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .carousel-items img:hover {
+            transform: scale(1.2);
+        }
+
+        .top-10 img {
+            width: 95px;
+        }
+
+        footer {
+           background-color: black;
+           padding: 30px 50px;
+           text-align: center;
+           color: white;
+        }
+
+        .social-icons {
+           display: flex;
+           justify-content: center;
+           gap: 20px;
+           margin-bottom: 20px;
+        }
+
+        .social-icons a img {
+            width: 40px;
+        }
+
+        .footer-links {
+           display: flex;
+           justify-content: center;
+           gap: 30px;
+           margin-bottom: 10px;
+        }
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #ccc;
+}
+
+
+        .social-icons a img {
+            width: 30px;
+            margin: 0 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            header {
+                padding: 10px 20px;
+            }
+
+            .hero-text h1 {
+                font-size: 50px;
+            }
+
+            .hero-text p {
+                font-size: 18px;
+            }
+
+            .carousel-items img {
+                width: 150px;
+            }
+        }
+    </style>
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="netflixlogo.png" alt="Netflix Logo">
+        </div>
+        <nav>
+            <ul class="catagori">
+                <li>Start</li>
+                <li>Shows</li>
+                <li>Movies</li>
+                <li>New & Popular</li>
+                <li>Documentaries</li>
+                <li>My List</li>
+            </ul>
+        </nav>
+        <div class="search-profile">
+            <!-- <input type="text" placeholder="Search"> -->
+            <img src="Search.png" alt="Search">
+            <img src="gift.png" alt="Gift">
+            <img src="notification.png" alt="Notification">
+            <img src="profile.png" alt="Profile Icon">
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>MAID</h1>
+            <p>Show</p>
+            <div class="hero-buttons">
+                <button>Play</button>
+                <button>More Info</button>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Carousel Sections -->
+    <section class="carousel">
+        <h2>See again</h2>
+        <div class="carousel-items">
+            <img src="1.1.png" alt="Movie 1">
+            <img src="1.2.png" alt="Movie 2">
+            <img src="1.3.png" alt="Movie 3">
+            <img src="1.4.png" alt="Movie 4">
+            <img src="1.5.png" alt="Movie 5">
+        </div>
+    </section>
+
+    <section class="carousel">
+        <h2>Top 10 in your country</h2>
+        <div class="carousel-items top-10">
+            <img src="01.png" alt="01">
+            <img src="2.1.png" alt="Movie 6">
+            <img src="02.png" alt="02">
+            <img src="2.2.png" alt="Movie 7">
+            <img src="03.png" alt="03">
+            <img src="2.3.png" alt="Movie 8">
+            <img src="04.png" alt="04">
+            <img src="2.4.png" alt="Movie 9">
+            <img src="05.png" alt="05">
+            <img src="2.5.png" alt="Movie 10">
+            <img src="06.png" alt="06">
+        </div>
+    </section>
+
+    <section class="carousel">
+        <h2>Trending Now</h2>
+        <div class="carousel-items">
+            <img src="3.1.png" alt="Movie 11">
+            <img src="3.2.png" alt="Movie 12">
+            <img src="3.3.png" alt="Movie 13">
+            <img src="3.4.png" alt="Movie 14">
+            <img src="3.5.png" alt="Movie 15">
+        </div>
+    </section>
+
+    <section class="carousel">
+        <h2>Sci-fi shows</h2>
+        <div class="carousel-items">
+            <img src="4.1.png" alt="Movie 11">
+            <img src="4.2.png" alt="Movie 12">
+            <img src="4.3.png" alt="Movie 13">
+            <img src="4.4.png" alt="Movie 14">
+            <img src="4.5.png" alt="Movie 15">
+        </div>
+    </section>
+
+    <footer>
+      <div class="social-icons">
+        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="youtube.png" alt="YouTube"></a>
+        <a href="#"><img src="twitter.png" alt="twitter"></a>
+      </div>
+        <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Account</a>
+        </div>
+        <p>&copy; 2024 Netflix, Inc. Clone by DAX PATEL</p>
+    </footer>
+</body>
+</html>
